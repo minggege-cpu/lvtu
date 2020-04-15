@@ -1,0 +1,28 @@
+<template name="loginUsercenter">
+<view>
+<view class="top">
+<image src="{{avatarUrl}}" class="userIcon"></image>
+<text id="username">{{nickName}}</text>
+</view>
+
+<view class="middle">
+
+<view class="model">
+<image src="../../static/icon/car.jpg" class="carIcon"></image>
+<image src="../../static/icon/pay.jpg" class="carIcon"></image>
+<image src="../../static/icon/book.jpg" class="carIcon"></image>
+<image src="../../static/icon/cumpter.jpg" class="carIcon"></image>
+</view>
+<view class="desc">
+<text id="iconDesc">购物车</text>
+<text id="iconDesc"decode="{{true}}"> &nbsp;&nbsp;我的订单</text>
+<text id="iconDesc">我的课程</text>
+<text id="iconDesc">关于我们</text>
+</view>
+
+</view>
+
+
+
+</view>
+</template>

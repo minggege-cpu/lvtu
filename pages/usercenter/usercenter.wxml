@@ -1,0 +1,19 @@
+
+<import src="afterLogin/usercenter.wxml" />
+
+<view wx:if="{{!hasUserInfo}}">
+<view class="dologin">
+<button wx:if="{{!hasUserInfo && canIUse}}" id="btn1" open-type="getUserInfo" bindgetuserinfo="getUserInfo">登陆</button>
+</view>
+</view>
+
+<view wx:if="{{hasUserInfo}}">
+<template is="loginUsercenter" data="{{...userInfo}}"/>
+</view>
+
+<view class="bottom">
+<text>感谢您的使用\n</text>
+<text>学习互联网知识请认准我们\n</text>
+<text>更多详情请浏览\n</text>
+<text>https://www.mess.plus</text>
+</view>

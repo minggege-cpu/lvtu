@@ -1,0 +1,21 @@
+
+<block wx:for="{{moreCourse}}" wx:for-item="item" wx:key="key">
+<view class="hotclass" bindtap="goCourseDetail" data-id="{{item.id}}">
+<view class="title">
+<view>
+    <text id="tittle1">{{item.name}}</text>
+</view>
+<view>
+    <text id="tittle2">学习周期：{{item.learn_time}}</text>
+</view>
+<view>
+    <text id="tittle2">{{item.tag}}</text>
+</view>
+</view>
+
+<view class="courseImgView">
+    <image src="{{item.image}}" class="courseImg"></image>
+</view>
+</view>
+<view class="part"></view>
+</block>

@@ -1,0 +1,10 @@
+{
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "usingComponents": {},
+  "navigationBarTitleText": "个人中心",
+  "navigationBarBackgroundColor": "#66CCFF"
+  
+  
+}

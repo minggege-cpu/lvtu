@@ -1,0 +1,93 @@
+<view class="search">
+<image src="../../static/icon/logo.jpg" class="logo"></image>
+<view class="inputView">
+<icon type="search" size="20" class="search-img" class="iconView1"></icon>
+<input type="text" id="searchInput" placeholder="请输入搜索关键词" bindconfirm="searchBind" value="{{text}}" bindinput="searchBind2"></input>
+<block wx:if="{{searchStatus}}">
+<icon type="clear" size="20" class="xx-img" bindtap="onCancelImgTap" class="iconView2"></icon>
+</block>
+</view>
+</view>
+
+<view class="news-container">
+  <!-- 轮播图 -->
+  <swiper indicator-dots="true" autoplay="true" interval="3000" circular="true" indicator-color="#fff">
+    <swiper-item class="lun">
+      <image src="../../static/icon/banner2.jpg"></image>
+    </swiper-item>
+    <swiper-item class="lun">
+      <image src="../../static/icon/banner3.jpg"></image>
+    </swiper-item>
+    <swiper-item class="lun">
+      <image src="../../static/icon/banner1.jpg"></image>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class="hot">
+<view>
+    <text id="categray">热门课程</text>
+</view>
+<view class="hotclass">
+<view class="title">
+<view>
+    <text id="tittle1">uni-app商业级实战 一次搞定多平台app</text>
+</view>
+<view>
+    <text id="tittle2">终极跨平台多端解决方案</text>
+</view>
+<view>
+    <text id="tittle2">金牌讲师：刘谋</text>
+</view>
+</view>
+
+<view class="courseImgView">
+    <image src="http://video.mess.plus/courseImg/uniapp.jpg" class="courseImg"></image>
+</view>
+</view>
+</view>
+
+<view class="allcourse">
+<view>
+    <text id="categray">精制课程</text>
+</view>
+<view class="navigation"> 
+<view class="nav1">
+    <text id="nav{{add1}}" bindtap="changeStyle1">小白入门</text>
+    <view class="{{underLine1}}"></view>
+</view>
+<view>
+    <text id="nav{{add2}}"bindtap="changeStyle2">基础进阶</text>
+    <view class="{{underLine2}}"></view>
+</view>
+<view>
+    <text id="nav{{add3}}" bindtap="changeStyle3">专项突破</text>
+    <view class="{{underLine3}}"></view>
+</view>
+</view>
+
+<block wx:for="{{allcourse}}" wx:for-item="item" wx:key="key">
+<view class="hotclass" bindtap="goCourseDetail" data-id="{{item.id}}">
+<view class="title">
+<view>
+    <text id="tittle1">{{item.name}}</text>
+</view>
+<view>
+    <text id="tittle2">学习周期：{{item.learn_time}}</text>
+</view>
+<view>
+    <text id="tittle2">{{item.tag}}</text>
+</view>
+</view>
+
+<view class="courseImgView">
+    <image src="{{item.image}}" class="courseImg"></image>
+</view>
+</view>
+<view class="part"></view>
+</block>
+<view class="moreCourse">
+    <button id="btn" bindtap="getMoreCourse" data-category="{{getMore}}">全部课程</button>
+</view>
+
+</view>

@@ -1,0 +1,16 @@
+<template name="commentTem">
+<form bindsubmit="bindFormSubmit"  data-nickName="{{nickName}}" data-iconUrl="{{avatarUrl}}" data-courseID="{{courseID}}">
+<view class="commentArea">
+    <textarea id="textArea" placeholder="写下你的评价" name="textarea" value="{{comments}}"></textarea>
+</view>
+<view class="otherArea">
+    <view class="back" bindtap="backDetail">
+        <text id="back">取消</text>
+    </view>
+    <!-- <view class="sure" bindtap="commentSuccess" data-nickName="{{nickName}}" data-iconUrl="{{avatarUrl}}">
+        <text id="sure">发表</text>
+    </view> -->
+    <button form-type="submit" id="subBut">发表</button>
+</view>
+</form>
+</template>

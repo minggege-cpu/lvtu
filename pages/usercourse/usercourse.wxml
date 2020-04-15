@@ -1,0 +1,24 @@
+<block wx:if="{{hasUserInfo}}">
+    <block wx:for="{{userCourse}}" wx:for-item="item" wx:key="key">
+<view class="part1"></view>
+<view class="course" bindtap="goCourseDetail" data-id="{{item.id}}">
+    <view class="imgView">
+      <image src="{{item.image}}" class="courseImg"></image>
+    </view>
+    <view class="textView">
+    <view class="textDesc">
+        <text id="courseName">{{item.name}}</text>
+        <text id="courseName">{{item.desc}}</text>
+        <text id="studyLesson">开始学习：第一章</text>
+    </view>
+     <view class="finish">
+        <view class="finishShow">
+            <text id="finishShow">10%</text>
+        </view>
+        <text id="text1">进度</text>  
+     </view>   
+    </view>
+</view>
+<view class="part2"></view>
+    </block>
+</block>

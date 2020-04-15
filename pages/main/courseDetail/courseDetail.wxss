@@ -1,0 +1,346 @@
+@import "comment/comment.wxss";
+.title{
+  width: 95%;
+  height: 70px;
+  margin:0 auto;
+  /* border: solid 1px; */
+ 
+  
+  margin-top: 10px;
+}
+.courseDesc{
+  width: 95%;
+  height: 33px;
+  /* border: solid 1px; */
+  margin:0 auto;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+#tag1{
+  color: coral;
+  letter-spacing: 1px;
+}
+#tag2{
+  font-size: 11px;
+  color: rgba(24, 1, 1, 0.918);
+}
+.courseName{
+  width:100%;
+  height: 24px;
+  margin-left: 10px;
+}
+.part4{
+  width: 90%;
+  height: 1px;
+  background-color:rgb(229, 233, 236) ;
+  margin:0 auto;
+  
+}
+#courseName{
+ font-size: 18px;
+  /* font-weight: 550; */
+  letter-spacing: 1px;
+}
+.video{
+  width: 100%;
+  height: 225px;
+  display:flex;
+  justify-content:center
+}
+#myVideo{
+  width: 100%;
+  
+  /* margin-left: 38px; */
+  margin:0 auto;
+}
+.part{
+  height: 1px;
+  width: 100%;
+  background-color: rgb(229, 233, 236);
+  margin-bottom: 50px;
+}
+.teacher{
+  width: 100%;
+  height: 150px;
+  /* border: solid 1px; */
+  margin-top: 10px;
+}
+#teacherIntroduce{
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 15px;
+  letter-spacing: 1px;
+ 
+}
+.teacherImg{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  margin-left: 15px;
+  margin-top: 10px;
+  border: 3px solid rgba(0,0,0,0.5);
+}
+.teacherInfo{
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+
+}
+.image{
+  width: 20%;
+  height: 80px;
+  /* border:solid 1px; */
+}
+.info{
+  width: 70%;
+  height: 80px;
+  /* border:solid 1px; */
+  display: flex;
+  flex-direction: column; 
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.tex1{
+  /* margin-top: 10px; */
+  font-size: 15px;
+  height: 20px;
+  color: rgb(87, 100, 110);
+  display: flex;
+  align-items: center;
+}
+.desc{
+  height: 60px;
+  width: 90%;
+  
+}
+#desc{
+  font-size: 15px;
+  color: rgb(87, 100, 110);
+  margin-top: 10px;
+}
+.gold{
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+}
+.courseVideo{
+  margin-top: 10px;
+}
+.part2{
+  width: 90%;
+  height: 1px;
+  background-color:rgb(229, 233, 236) ;
+  margin:0 auto;
+  margin-top: 15px;
+}
+.captorName{
+  width: 90%;
+  height: 25px;
+  /* border: solid 1px; */
+  margin-top: 10px;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#captorName{
+  font-size: 13px;
+  font-weight: 500;
+  /* color:rgb(124, 144, 160); */
+  /* color: rgb(124, 144, 160); */
+}
+.stuatus{
+  width: 16px;
+  height: 16px;
+}
+.videoInfo{
+  width: 80%;
+  height: 38px;
+  /* border: solid 1px; */
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  
+}
+.playImg{
+  width: 16px;
+  height: 20px;
+}
+#videoName{
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 10px;
+  /* color:rgb(124, 144, 160); */
+}
+#videoNameChose{
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 10px;
+  color:rgb(55, 186, 247);
+}
+.part3{
+  width: 75%;
+  height: 1px;
+  margin:0 auto;
+  background-color:rgb(229, 233, 236) ;
+}
+.bottom{
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.left{
+  width: 50%;
+  height: 50px;
+  background-color: rgb(229, 233, 236);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right{
+  width: 50%;
+  height: 50px;
+  background-color: rgb(55, 186, 247);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#v1{
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+#v2{
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: aliceblue;
+}
+.part5{
+  width: 100%;
+  height: 1px;
+  /* background-color:rgb(229, 233, 236) ; */
+  
+}
+.studentComment{
+  width: 100%;
+  margin-top: 8px;
+}
+#comment{
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 15px;
+  letter-spacing: 1px;
+}
+.commentView{
+  width: 95%;
+  height: 50px;
+  background-color:rgb(235, 240, 243);
+  border-radius: 5px;
+  margin:0 auto;
+  margin-top: 4px;
+  display: flex;
+  align-items: center; 
+}
+#tex2{
+  font-size: 15px;
+  color: rgb(89, 103, 114);
+}
+.commentDesc{
+  width: 95%;
+  /* height: 60px; */
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.commentInfo{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.commentIcon{
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+.commentUser{
+  width: 50%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+#nickname{
+  margin-left: 6px;
+  font-size: 13px;
+  color:rgb(124, 144, 160);
+}
+#time{
+  font-size: 13px;
+  color:rgb(124, 144, 160);
+}
+#commentWord{
+  font-size: 13px;
+  /* color:rgb(124, 144, 160); */
+  
+}
+.commentWord{
+  margin-top: 2px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+.part6{
+  width: 100%;
+  height: 1px;
+  background-color:rgb(229, 233, 236) ;
+}
+.part7{
+  width: 100%;
+  height: 10px;
+  background-color:rgb(235, 240, 243) ;
+}
+.commentCategory{
+  width: 95%;
+  height: 30px;
+  /* border: solid 1px; */
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.categoryView1{
+  height: 100%;
+  width: 45px;
+  background-color:rgb(55, 186, 247) ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+#categoryView1{
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.categoryView2{
+  margin-left: 5px;
+  height: 100%;
+  /* width: 45px; */
+  /* background-color:rgb(55, 186, 247) ; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  border: solid rgb(193, 211, 221) 1px;
+  padding: 0px 5px;
+}
+#categoryView2{
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+

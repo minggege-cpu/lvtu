@@ -1,0 +1,128 @@
+<import src="comment/comment.wxml" />
+
+<!-- <view style='height: {{statusBarHeight}}px;background-color: #66CCFF;position: fixed;top:0;z-index:999;width:100%;'></view>
+<view class="navBar" style="position: fixed;top:{{statusBarHeight}}px;z-index:999;width:100%;">
+    <view class="exitView" bindtap="backIndex">
+    <image src="../../../static/icon/back.png" class="exitImg"></image>
+    </view>
+    <text id="navBar" style="font-size: 15px;margin-left:2px;">课程详情</text>
+</view>
+<view style="height: {{statusBarHeight+44}}px;width:100%"></view> -->
+
+<block wx:if="{{uncomment}}">
+<view class="video">
+  <video id="myVideo" src="{{url}}" danmu-list="{{danmuList}}" bindplay="bind2"  bindtimeupdate="bind1" enable-danmu danmu-btn controls ></video>
+  <!-- <view class="btn-area">
+    <button bindtap="bindButtonTap">获取视频</button>
+    <input bindblur="bindInputBlur"/>
+    <button bindtap="bindSendDanmu">发送弹幕</button>
+  </view> -->
+</view>
+<view class="title">  
+<view class="courseName">
+    <text id="courseName">{{course[0].name}}</text>
+</view>
+<view class="courseDesc">
+    <text id="tag1" decode="{{true}}">免费 &ensp;&ensp;</text>
+    <text id="tag2" decode="{{true}}">订阅:29万&ensp;&ensp;</text>
+    <text id="tag2" decode="{{true}}">最近在学:15万&ensp;&ensp;</text>
+</view>
+</view>
+
+<view class="part4"></view>
+<view class="courseVideo">
+    <text id="teacherIntroduce">课程大纲</text>
+    <view class="part2"></view>
+    <view class="allCpator">
+    <block wx:for="{{lesson}}" wx:for-item="item" wx:key="key">
+        <view class="captorName" bindtap="openCaptor" data-captorid = "{{item.id}}">
+            <text id="captorName">{{item.name}}</text>
+            <block wx:if="{{item.id==show}}">
+                <image src="../../../static/icon/open.png" class="stuatus"></image>
+            </block>
+            <block wx:else>
+                <image src="../../../static/icon/close.png" class="stuatus"></image>
+            </block>           
+        </view>
+        <block wx:if="{{item.id==show}}">
+            <block wx:for="{{video}}" wx:for-item="item1" wx:key="key">
+            <view class="videoInfo" bindtap="changeUrl" data-url="{{item1.url}}">
+                <!-- <image src="../../../static/icon/play.png" class="playImg"></image> -->
+                <block wx:if="{{item1.url==url}}">
+                <text id="videoNameChose">{{item1.name}}</text>
+                </block>
+                <block wx:else>
+                <text id="videoName">{{item1.name}}</text>
+                </block>
+                
+            </view>
+            <view class="part3">
+            </view>
+            </block>
+        </block>
+        <view class="part2"></view>
+    </block>   
+    </view>
+
+</view>
+
+<view class="teacher">
+  <view class="teacherIntroduce">
+    <text id="teacherIntroduce">教师介绍</text>
+</view>
+<view class="teacherInfo">
+<view class="img">
+    <image src="../../../static/icon/icon.jpg" class="teacherImg"></image>
+</view>
+<view class="info">
+<view class="tex1">
+    <text id="tex1">{{teacher[0].work_position}}：{{teacher[0].name}}</text>
+</view>
+<view class="desc">
+    <text id="desc">{{teacher[0].desc}}</text>
+</view>
+</view>
+</view>
+</view>
+<view class="part7"></view>
+
+<view class="studentComment">
+    <text id="comment">学员评价</text>
+    <block wx:for="{{comment}}" wx:for-item="item" wx:key="key">
+    <view class="commentDesc">
+    <view class="commentInfo">   
+    <view class="commentUser">
+        <image src="{{item.iconUrl}}" class="commentIcon"></image>
+        <text id="nickname">{{item.nickName}}</text>
+    </view>
+    <text id="time">{{item.add_time}}</text>
+    </view>
+    <view class="commentWord">
+        <text id="commentWord">{{item.comments}}</text>
+    </view>
+    </view>
+    
+    <view class="part6"></view>
+    </block>
+   </view>
+    
+
+<view class="part5"></view>
+<view class="part"></view>
+
+<view class="bottom">
+<view class="left" bindtap="commentTap" data-userInfo="{{userInfo.nickName}}"><text id="v1">评论</text></view>
+
+<block wx:if="{{hasStudy == 'false'}}">
+    <view class="right" bindtap="studyTap" data-courseID="{{course[0].id}}" data-userInfo="{{userInfo.nickName}}"><text id="v2">马上学习</text></view>
+</block>
+<block wx:if="{{hasStudy == 'true'}}">
+    <view class="right"><text id="v2">已报名</text></view>
+</block> 
+
+</view>
+</block>
+
+<block wx:else>
+    <template is="commentTem"  data="{{...userInfo, ...{courseID:course[0].id}, ...{comments:comments} }}"/>
+</block>

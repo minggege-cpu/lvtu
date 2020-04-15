@@ -1,0 +1,67 @@
+page{
+  height: 100%;
+}
+.commentArea{
+  width: 100%;
+  height: 24%;
+  /* border: solid 1px; */
+}
+#textArea{
+  width: 100%;
+  height: 140px;
+  letter-spacing: 1px;
+  position: relative;
+  top: 25px;
+  left: 10px;
+}
+.otherArea{
+  height: 76%;
+  width: 100%;
+  background-color: rgb(235, 240, 243);
+  display: flex;
+  justify-content: space-between;
+}
+.back{
+  width: 90px;
+  height: 30px;
+  /* border: solid 1px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(55, 186, 247);
+  border-radius: 2px;
+  margin-top: 13px;
+  margin-left: 50px;
+}
+#back{
+    color: rgb(235, 240, 243);
+    font-weight: bold;
+}
+.sure{
+  width: 80px;
+  height: 30px;
+  /* border: solid 1px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(55, 186, 247);
+  border-radius: 2px;
+  margin-top: 13px;
+  margin-right:50px;
+}
+
+#sure{
+  color: rgb(235, 240, 243);
+}
+#subBut{
+  width: 90px;
+  height: 30px;
+  background-color: rgb(55, 186, 247);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  margin-top: 13px;
+  margin-right:50px;
+  color: rgb(235, 240, 243);
+}

@@ -1,0 +1,7 @@
+<!--pages/test/test.wxml-->
+<view class="container">
+  <input type="text" class="input" bindinput='input'/>
+  <button bindtap="calculate">cal</button>
+  <view>{{ result }}</view>
+</view>
+
