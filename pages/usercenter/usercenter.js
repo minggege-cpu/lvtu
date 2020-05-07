@@ -4,11 +4,6 @@
 var utils = require("../../utils/util.js");
 const app = getApp()
 Page({
-  globalData: {
-    appid: 'wxf00135d345ecd5a5',//appid需自己提供，此处的appid我随机编写
-    secret: '381a23f91103984a216e2a498be73aa7',//secret需自己提供，此处的secret我随机编写
-  },
-
   data: {
     hasUserInfo:false,
     userInfo:{},
